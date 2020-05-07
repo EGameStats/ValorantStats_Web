@@ -1,6 +1,6 @@
-# ValorantStatsTrial
+# ValorantStats
 
-> Trial
+> Web App to view your stats
 
 ## Build Setup
 
