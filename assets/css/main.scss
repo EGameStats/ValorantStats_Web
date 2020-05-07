@@ -1,0 +1,128 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+@font-face {
+  font-family: "Valorant";
+  font-weight: normal;
+  src: url("~assets/Valorant Font.ttf");
+}
+
+// Set your colors
+$primary: #e43f5a;
+$primary-invert: findColorInvert($primary);
+$secondary: #1f4068;
+$twitter: #4099ff;
+$twitter-invert: findColorInvert($twitter);
+$backg: #162447;
+$backg-invert: findColorInvert($backg);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  "white": (
+    $white,
+    $black
+  ),
+  "black": (
+    $black,
+    $white
+  ),
+  "light": (
+    $light,
+    $light-invert
+  ),
+  "dark": (
+    $dark,
+    $dark-invert
+  ),
+  "primary": (
+    $primary,
+    $primary-invert
+  ),
+  "info": (
+    $info,
+    $info-invert
+  ),
+  "success": (
+    $success,
+    $success-invert
+  ),
+  "warning": (
+    $warning,
+    $warning-invert
+  ),
+  "danger": (
+    $danger,
+    $danger-invert
+  ),
+  "twitter": (
+    $twitter,
+    $twitter-invert
+  ),
+  "background": (
+    $backg,
+    $backg-invert
+  )
+);
+
+// Links
+$link: $primary;
+$link-invert: #ffffff;
+$link-focus-border: #ffffff;
+$link-hover: #fff;
+$body-color: #fff !important;
+$title-color: #fff !important;
+$subtitle-color: #fff;
+$body-background-color: #162447;
+$content-heading-color: #fff !important;
+$strong-color: #ffffff !important;
+$body-family: "Quicksand", sans-serif;
+
+//card
+$card-background-color: $secondary;
+$card-header-color: #fff !important;
+$card-color: $body-color;
+
+//sidebar
+$sidebar-box-shadow: none;
+
+//menu && sidebar
+$menu-item-color: #fff;
+$menu-label-color: $primary;
+$menu-label-font-size: 1em;
+$menu-list-link-padding: 1em;
+
+.menu-label {
+  font-weight: bold;
+  font-size: 1.5em !important;
+}
+
+.b-sidebar {
+  padding-left: 1em;
+  padding-top: 1em;
+
+  li {
+    font-size: 1.5em;
+  }
+}
+
+//input
+$input-color: #fff;
+$input-background-color: $secondary;
+
+// custom
+.valorant {
+  font-family: "Valorant";
+}
+
+// page transition
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.1s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
