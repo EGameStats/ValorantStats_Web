@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar-page">
     <section class="sidebar-layout">
-      <b-sidebar position="fixed" :open="true" type="is-background">
+      <b-sidebar position="fixed" open type="is-background" :can-cancel="null">
         <div class="p-1">
           <div class="block">
             <img src="~/assets/valorantStatsLogo.svg" alt="ValorantStats Logo" />
