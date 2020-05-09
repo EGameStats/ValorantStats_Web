@@ -71,6 +71,7 @@ export default {
   }
   .b-sidebar {
     .sidebar-content {
+      z-index: 0;
       &.is-mini-mobile {
         &:not(.is-mini-expand),
         &.is-mini-expand:not(:hover) {
@@ -105,6 +106,7 @@ export default {
   }
   .b-sidebar {
     .sidebar-content {
+      z-index: 0;
       &.is-mini {
         &:not(.is-mini-expand),
         &.is-mini-expand:not(:hover) {
