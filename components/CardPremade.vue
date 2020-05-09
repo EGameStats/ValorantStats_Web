@@ -3,6 +3,7 @@
     <div class="card-image" v-if="riotId">
       <figure class="image is-4by3">
         <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+        <a class="delete is-medium" style="position: absolute; top: 0; right: 0;" @click="deleteCard"></a>
       </figure>
     </div>
     <div class="card-content" v-if="riotId">
@@ -28,7 +29,11 @@ export default {
   data() {
     return {};
   },
-  methods: {}
+  methods: {
+    deleteCard() {
+      this.$emit('deletePlayer', this.riotId)
+    }
+  }
 };
 </script>
 

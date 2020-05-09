@@ -16,7 +16,7 @@
     </div>
     <div class="columns is-mobile">
       <div class="column" v-for="(player, index) in selectedIds" :key="player + index">
-        <card-premade :riotId="player" @click.native="player ? null : addPlayer(index)"></card-premade>
+        <card-premade :riotId="player" @click.native="player ? null : addPlayer(index)" @deletePlayer="deletePlayer($event)"></card-premade>
       </div>
     </div>
   </div>
@@ -24,33 +24,48 @@
 
 <script>
 import CardPremade from "../components/CardPremade";
-import AddPlayerModal from "../components/AddPlayerModal"
+import AddPlayerModal from "../components/AddPlayerModal";
 
 export default {
   name: "premades",
   components: {
-    CardPremade,
+    CardPremade
   },
-  data() {
-    return {
-      selectedIds: [null, null, null, null, null]
-    };
+  asyncData({ query }) {
+    let selectedIds = [null, null, null, null, null];
+    Object.keys(query).forEach(indexStr => {
+      let index = parseInt(indexStr);
+      selectedIds[index] = query[index];
+    });
+    return { selectedIds };
   },
   methods: {
     addPlayer(index) {
-      console.log(index);
       this.$buefy.modal.open({
         parent: this,
         component: AddPlayerModal,
         props: { index },
         events: {
-          'set-player': value => {
-            this.$set(this.selectedIds, value['index'], value['playerId'])
+          "set-player": value => {
+            let newQuery = {}
+            this.$set(this.selectedIds, value["index"], value["playerId"]);
+            newQuery[value["index"]] = value["playerId"];
+            this.$router.push({query: { ...this.$route.query, ...newQuery }})
           }
         },
         hasModalCard: true,
         trapFocus: true
+      });
+    },
+    deletePlayer(playerId) {
+      let newQuery = {};
+      let index = this.selectedIds.indexOf(playerId);
+      this.$set(this.selectedIds, index, null);
+      this.selectedIds.forEach((value, index) => {
+        if (value)
+          newQuery[index] = value;
       })
+      this.$router.push({query: newQuery})
     }
   }
 };
