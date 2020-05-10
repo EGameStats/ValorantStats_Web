@@ -1,7 +1,7 @@
 {
   "name": "ValorantStats",
   "version": "1.0.0",
-  "description": "ValorantStats WebApp",
+  "description": "Look up and track your statistics in Valorant. Share your stats with anyone and see them evolve. View match history and tournaments. View anyone's astatistics.",
   "author": "ValorantStats",
   "private": true,
   "scripts": {
@@ -14,6 +14,7 @@
     "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/firebase": "^5.2.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "@nuxtjs/sitemap": "^2.2.1",
     "firebase": "^7.14.2",
     "nuxt": "^2.0.0",
     "nuxt-buefy": "^0.3.2",
