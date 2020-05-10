@@ -65,7 +65,7 @@ export default {
           storageBucket: "valorantstats-208ae.appspot.com",
           messagingSenderId: "711555753355",
           appId: "1:711555753355:web:390629477aae7386d5fb8e",
-          measurementId: "G-19D519XN5L"
+          measurementId: "G-LYB5TL395D"
         },
         services: {
           auth: {
@@ -82,7 +82,7 @@ export default {
   ],
 
   googleAnalytics: {
-    id: 'G-19D519XN5L'
+    id: 'G-LYB5TL395D'
   },
 
   sitemap: {
