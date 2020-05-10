@@ -12,6 +12,11 @@ export default {
         hid: "description",
         name: "description",
         content: process.env.npm_package_description || ""
+      },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content: 'valorant stats, valorant statistics, stats, statistics, valorant, Valorant, valorant match stats, valorant team stats, valorant matchmaking stats, valorant match track, valorant matchmaking track, tracking'
       }
     ],
     link: [
@@ -71,8 +76,14 @@ export default {
           firestore: true
         }
       }
-    ]
+    ],
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    hostname: 'http://valorant.statspeek.com/',
+    gzip: true
+  },
 
   pwa: {
     workbox: {
