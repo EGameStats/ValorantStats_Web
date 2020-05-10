@@ -53,6 +53,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
+    '@nuxtjs/google-analytics',
     [
       "@nuxtjs/firebase",
       {
@@ -79,6 +80,10 @@ export default {
     ],
     '@nuxtjs/sitemap'
   ],
+
+  googleAnalytics: {
+    id: '231567904'
+  },
 
   sitemap: {
     hostname: 'http://valorant.statspeek.com/',

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="title is-1">You are logged in</h1>
-    <p>{{ userDoc }}</p>
+    <h2 class="title is-2">You will be notified when we go live!</h2>
   </div>
 </template>
 
