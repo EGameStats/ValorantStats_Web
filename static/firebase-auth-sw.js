@@ -6,7 +6,7 @@ importScripts(
 importScripts(
   'https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js'
 )
-firebase.initializeApp({"apiKey":"AIzaSyAV3L3f6Nnet6efC9eZNzp09NGKxWIQC5I","authDomain":"valorantstats-208ae.firebaseapp.com","databaseURL":"https:\u002F\u002Fvalorantstats-208ae.firebaseio.com","projectId":"valorantstats-208ae","storageBucket":"valorantstats-208ae.appspot.com","messagingSenderId":"711555753355","appId":"1:711555753355:web:390629477aae7386d5fb8e","measurementId":"G-19D519XN5L"})
+firebase.initializeApp({"apiKey":"AIzaSyAV3L3f6Nnet6efC9eZNzp09NGKxWIQC5I","authDomain":"valorantstats-208ae.firebaseapp.com","databaseURL":"https:\u002F\u002Fvalorantstats-208ae.firebaseio.com","projectId":"valorantstats-208ae","storageBucket":"valorantstats-208ae.appspot.com","messagingSenderId":"711555753355","appId":"1:711555753355:web:390629477aae7386d5fb8e","measurementId":"G-LYB5TL395D"})
 
 /**
  * Returns a promise that resolves with an ID token if available.

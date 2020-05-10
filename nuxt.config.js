@@ -43,7 +43,9 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: [
+    '@nuxtjs/google-analytics'
+  ],
   /*
    ** Nuxt.js modules
    */
@@ -53,7 +55,6 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
-    '@nuxtjs/google-analytics',
     [
       "@nuxtjs/firebase",
       {
@@ -74,7 +75,8 @@ export default {
             },
             ssr: true
           },
-          firestore: true
+          firestore: true,
+          analytics: true
         }
       }
     ],
