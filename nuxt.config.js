@@ -82,7 +82,7 @@ export default {
   ],
 
   googleAnalytics: {
-    id: '231567904'
+    id: 'G-19D519XN5L'
   },
 
   sitemap: {
