@@ -18,6 +18,7 @@
     "firebase": "^7.14.2",
     "nuxt": "^2.0.0",
     "nuxt-buefy": "^0.3.2",
+    "redirect-ssl": "^1.4.1",
     "vuexfire": "^3.2.2"
   },
   "devDependencies": {

@@ -91,7 +91,10 @@ export default {
     hostname: 'http://valorant.statspeek.com/',
     gzip: true
   },
-
+  /*
+  * Redirect to https
+  */
+  serverMiddleware: ["redirect-ssl"],
   pwa: {
     workbox: {
       importScripts: ["/firebase-auth-sw.js"],
